@@ -17,9 +17,9 @@ const ShortLinks = (e) => {
             setError(true)
         }
         const res = await axios.get(`https://api.shrtco.de/v2/shorten?url=${value}`)
-        const {data: {result: {full_short_link: shortLink}}} = res
-        const {data: {result: {original_link: fullLink}}} = res
-        const newList = list.concat({link:fullLink, short:shortLink, id: uuidv4()})
+        const {data: {result: {full_short_link: shortenedLink}}} = res
+        const {data: {result: {original_link: originalLink}}} = res
+        const newList = list.concat({link:originalLink, short:shortenedLink, id: uuidv4()})
         
         setList(newList)
         setValue('')
