@@ -66,7 +66,7 @@ Next, I'm planning to build a CRUD App using React
 ### Useful resources
 
 - [Deploy React to GH Pages](https://github.com/gitname/react-gh-pages) - This helped me a lot to deploy my React App to GitHub Pages!
-- [K-Mannnn's solution](https://github.com/K-Mannnn/url-app/blob/gh-pages/src/main.js) - Thank you, I learned how to use axios and GET method from his/her code!
+- [Kiran's solution](https://github.com/K-Mannnn/url-app/blob/gh-pages/src/main.js) - Thank you, I learned how to use axios and GET method from his/her code!
 
 
 ## Author
