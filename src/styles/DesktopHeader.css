@@ -1,0 +1,25 @@
+li  {
+    list-style: none;
+}
+
+.desktop-nav-links li a{
+    transition: color .3s ease;
+}
+.desktop-nav-links li a:hover {
+    color: hsl(255, 11%, 22%);
+}
+.desktop-nav-links {
+    /* padding: 0; */
+    display: flex;
+    gap: 2rem;
+    grid-column: 2/5;
+    
+}
+
+.desktop-login-buttons {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    grid-column: span 1/30;
+}
+

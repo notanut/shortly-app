@@ -1,0 +1,62 @@
+.link {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: white;
+    gap: 1rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.link> *:nth-child(1) {
+    flex: 1 1 65%;
+    min-width: 15ch;
+}
+
+.link> *:nth-child(2) {
+    text-align: right;
+    flex: 1 1 25%;
+    min-width: 25ch;
+    color: hsl(180, 66%, 49%);
+}
+
+.link> *:nth-child(3) {
+    flex: 1 1 10%;
+    min-width: 10ch;
+}
+
+.link-text p,
+.link-text-result p {
+    word-wrap: anywhere;
+    max-width: 100%;
+}
+
+
+@media (max-width: 667px) {
+    .link {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .link-text p,
+    .link-text-result p {
+        font-size: 1rem;
+    }
+
+    .link-text-result p{
+        text-align: left;
+    }
+
+    .link > *:nth-child(2) {
+        padding-top: 1rem;
+        border-top: solid 1px hsl(0, 0%, 75%);
+        width: 100%;
+    }
+
+    .link .MuiButton-root {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}

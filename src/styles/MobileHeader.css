@@ -1,0 +1,10 @@
+@import "./MobileNav.css";
+
+.hamburger {
+  z-index: 100;
+  cursor: pointer;
+}
+
+.hamburger svg {
+  color: hsl(257, 7%, 63%);
+}

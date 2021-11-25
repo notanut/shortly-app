@@ -1,0 +1,72 @@
+@import './Link.css';
+
+input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 7.5px;
+    padding: 0.75rem;
+}
+
+.redBorder {
+    padding: 0 0 0 0.75rem;
+    border: 5px solid hsl(0, 87%, 67%);
+}
+
+.link-field-container {
+    /* position: absolute;
+    top: 50%; */
+    margin-top: -7rem;
+    display: flex;
+    overflow: hidden;
+    gap: 1rem;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2.5rem 3rem;
+    border-radius: 10px;
+}
+
+.link-text-field {
+    /* background-color: white; */
+    border-radius: 10px;
+}
+
+.link-field-container > *:nth-child(1) {
+    flex: 1 1 75%;
+    min-width: 25ch;
+}
+
+.link-field-container > *:nth-child(2) {
+    flex: 1 1 25%;
+    min-width: 15ch;
+}
+
+.link-container .MuiTextField-root {
+    font-family: 'Poppins', sans-serif;
+}
+
+.error-warning {
+    color: hsl(0, 87%, 67%);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 667px) {
+    .link-field-container {
+        padding: 1.5rem;
+        background-image: url(../images/bg-shorten-mobile.svg);
+        flex-direction: column;
+    }
+    
+    .link-field-container > *:nth-child(1) {
+        min-width: 15ch;
+        max-width: 100%;
+    }
+
+    .error-warning {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,25 @@
+@import './DesktopHeader.css';
+@import './MobileHeader.css';
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: hsl(257, 7%, 63%);
+    font-weight: 700;
+
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+nav {
+    font-size: 15px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: subgrid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

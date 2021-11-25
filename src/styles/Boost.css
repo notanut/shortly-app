@@ -1,0 +1,14 @@
+.boost {
+    text-align: center;
+    color: white;
+}
+
+.boost h1 {
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width: 667px) {
+    .boost h1 {
+        font-size: 1.6875rem;
+    }
+}
