@@ -1,8 +1,9 @@
 import LinkForm from "./LinkForm"
 import Link from "./Link"
 import axios from "axios"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { v4 as uuidv4 } from 'uuid';
+import { LocalActivity } from "@material-ui/icons";
 
 const urlList = []
 
@@ -25,6 +26,15 @@ const ShortLinks = (e) => {
         setValue('')
     }
 
+    useEffect(() => {
+        const storedLinks = JSON.parse(localStorage.getItem('list'))
+        if (storedLinks) setList(storedLinks)
+    }, [])
+
+    useEffect(() => {
+        localStorage.setItem('list', JSON.stringify(list))
+    }, [list])
+
     function handleSubmit(e) {
         e.preventDefault()
         setError(false)
@@ -34,6 +44,10 @@ const ShortLinks = (e) => {
         }
 
         handleShorten()
+    }
+
+    const deleteLink = (id) => {
+        setList(list.filter((list) => list.id !== id))
     }
 
     
@@ -50,7 +64,13 @@ const ShortLinks = (e) => {
                         <i>Please add a link</i>
                     </div>}
             />
-            {list.map((link) => <Link key={link.id} url={link}/>) }
+            {list.map((link) => 
+            <Link 
+            key={link.id} 
+            url={link}
+            onDelete={deleteLink}
+            />
+            ) }
         </div>
     )
 }

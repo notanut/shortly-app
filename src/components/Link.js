@@ -1,9 +1,10 @@
 import { Button } from "@material-ui/core"
 import { useState } from "react"
 
-function Link({url}) {
+function Link({url, onDelete}) {
 
     const [copyText, setCopyText] = useState(false)
+
 
     return (
         <div className="link" key={url.id}>
@@ -31,7 +32,23 @@ function Link({url}) {
                 }}
                 >
                     {copyText ? 'Copied!' : 'Copy'}
-                </Button>
+            </Button>
+
+            <Button
+                variant="contained"
+                size="medium"
+                style={{
+                    textTransform: 'capitalize',
+                    fontFamily: 'Poppins',
+                    fontWeight: 700,
+                    fontSize: 15,
+                    color: "white",
+                    backgroundColor: 'hsl(260, 8%, 14%)'
+                }}
+                onClick={() => onDelete(url.id)}
+            >
+                Delete
+            </Button>
 
         </div>
     )
