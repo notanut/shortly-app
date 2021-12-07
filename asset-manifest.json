@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/shortly-app/static/css/main.1058e9d6.chunk.css",
-    "main.js": "/shortly-app/static/js/main.359db2cf.chunk.js",
-    "main.js.map": "/shortly-app/static/js/main.359db2cf.chunk.js.map",
-    "runtime-main.js": "/shortly-app/static/js/runtime-main.f71a3d7b.js",
-    "runtime-main.js.map": "/shortly-app/static/js/runtime-main.f71a3d7b.js.map",
-    "static/js/2.1c42e7b1.chunk.js": "/shortly-app/static/js/2.1c42e7b1.chunk.js",
-    "static/js/2.1c42e7b1.chunk.js.map": "/shortly-app/static/js/2.1c42e7b1.chunk.js.map",
-    "static/js/3.c72d3bf2.chunk.js": "/shortly-app/static/js/3.c72d3bf2.chunk.js",
-    "static/js/3.c72d3bf2.chunk.js.map": "/shortly-app/static/js/3.c72d3bf2.chunk.js.map",
+    "main.js": "/shortly-app/static/js/main.ce5f8af3.chunk.js",
+    "main.js.map": "/shortly-app/static/js/main.ce5f8af3.chunk.js.map",
+    "runtime-main.js": "/shortly-app/static/js/runtime-main.45a5a75c.js",
+    "runtime-main.js.map": "/shortly-app/static/js/runtime-main.45a5a75c.js.map",
+    "static/js/2.407cef3d.chunk.js": "/shortly-app/static/js/2.407cef3d.chunk.js",
+    "static/js/2.407cef3d.chunk.js.map": "/shortly-app/static/js/2.407cef3d.chunk.js.map",
+    "static/js/3.15870e98.chunk.js": "/shortly-app/static/js/3.15870e98.chunk.js",
+    "static/js/3.15870e98.chunk.js.map": "/shortly-app/static/js/3.15870e98.chunk.js.map",
     "index.html": "/shortly-app/index.html",
     "static/css/main.1058e9d6.chunk.css.map": "/shortly-app/static/css/main.1058e9d6.chunk.css.map",
-    "static/js/2.1c42e7b1.chunk.js.LICENSE.txt": "/shortly-app/static/js/2.1c42e7b1.chunk.js.LICENSE.txt",
+    "static/js/2.407cef3d.chunk.js.LICENSE.txt": "/shortly-app/static/js/2.407cef3d.chunk.js.LICENSE.txt",
     "static/media/index.css": "/shortly-app/static/media/bg-shorten-mobile.41c34b33.svg",
     "static/media/icon-brand-recognition.c349d3b6.svg": "/shortly-app/static/media/icon-brand-recognition.c349d3b6.svg",
     "static/media/icon-detailed-records.265c8aea.svg": "/shortly-app/static/media/icon-detailed-records.265c8aea.svg",
@@ -20,9 +20,9 @@
     "static/media/logo.83464303.svg": "/shortly-app/static/media/logo.83464303.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f71a3d7b.js",
-    "static/js/2.1c42e7b1.chunk.js",
+    "static/js/runtime-main.45a5a75c.js",
+    "static/js/2.407cef3d.chunk.js",
     "static/css/main.1058e9d6.chunk.css",
-    "static/js/main.359db2cf.chunk.js"
+    "static/js/main.ce5f8af3.chunk.js"
   ]
 }
