@@ -56,7 +56,7 @@ Users should be able to:
 I learned A LOT from this challenge. I'm not really good at React, so this challenge was a good practice to boost up my React skills! 
 I also use grid-column for the first time, and I'm suprised about how much CSS Grid can do! I learned how to use axios too.
 
-# UPDATE: I already know how to use local storage, and it works perfectly fine!
+#### UPDATE: I already know how to use local storage, and it works perfectly fine!
 
 ### Continued development
 
