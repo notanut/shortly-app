@@ -3,7 +3,6 @@ import Link from "./Link"
 import axios from "axios"
 import { useState, useEffect } from "react"
 import { v4 as uuidv4 } from 'uuid';
-import { LocalActivity } from "@material-ui/icons";
 
 const urlList = []
 
@@ -11,11 +10,16 @@ const ShortLinks = (e) => {
     const [value, setValue] = useState('')
     const [list, setList] = useState(urlList)
     const [error, setError] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
 
     const handleShorten = async () => {
         setError(false)
-        if (value == '') {
+        
+        if (value === '') {
             setError(true)
+            setIsLoading(false)
+        } else {
+            setIsLoading(true)
         }
         const res = await axios.get(`https://api.shrtco.de/v2/shorten?url=${value}`)
         const {data: {result: {full_short_link: shortenedLink}}} = res
@@ -24,6 +28,7 @@ const ShortLinks = (e) => {
         
         setList(newList)
         setValue('')
+        setIsLoading(false)
     }
 
     useEffect(() => {
@@ -39,7 +44,7 @@ const ShortLinks = (e) => {
         e.preventDefault()
         setError(false)
 
-        if (value == '') {
+        if (value === '') {
             setError(true)
         }
 
@@ -59,6 +64,7 @@ const ShortLinks = (e) => {
             value={value}
             onAdd={ handleShorten}
             onChange={(e) => setValue(e.target.value)}
+            isLoading={isLoading}
             errorWarning={error && 
                     <div className="error-warning">
                         <i>Please add a link</i>

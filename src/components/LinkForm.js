@@ -3,7 +3,7 @@ import { Button } from '@mui/material';
 // import useStateWithLocalStorage from './useStateWithLocalStorage';
 
 
-const LinkForm = ({onAdd, onSubmit, value, onChange, borderColor, errorWarning}) => {
+const LinkForm = ({onAdd, onSubmit, value, onChange, borderColor, errorWarning, isLoading}) => {
     
     return (
             <form className="link-field-container" onSubmit={onSubmit}>
@@ -27,13 +27,13 @@ const LinkForm = ({onAdd, onSubmit, value, onChange, borderColor, errorWarning})
                     textTransform: 'capitalize',
                     fontFamily: 'Poppins',
                     fontWeight: 700,
-                    backgroundColor: 'hsl(180, 66%, 49%)',
+                    backgroundColor: isLoading ? 'hsl(0, 0%, 75%)' : 'hsl(180, 66%, 49%)',
                     fontSize: 15,
                     borderRadius: 10,
                     color: "white"
                 }}
                 >
-                    shorten it!
+                    {isLoading ? 'shortening ...' : 'shorten it!'}
                 </Button>
 
             </form>

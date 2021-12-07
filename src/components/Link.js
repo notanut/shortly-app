@@ -43,7 +43,7 @@ function Link({url, onDelete}) {
                     fontWeight: 700,
                     fontSize: 15,
                     color: "white",
-                    backgroundColor: 'hsl(260, 8%, 14%)'
+                    backgroundColor: 'hsl(0, 87%, 67%)'
                 }}
                 onClick={() => onDelete(url.id)}
             >
